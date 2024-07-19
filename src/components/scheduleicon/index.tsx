@@ -19,7 +19,7 @@ const ScheduleIcon: React.FC<ScheduleIconProps> = ({ icon, name, route }) => {
                     height={200}
                     className="object-contain transition-transform transform hover:scale-125"
                 />
-                <span className="mt-2 text-lg font-medium">{name}</span>
+                <span className="mt-8 text-lg font-medium">{name}</span>
             </div>
         </Link>
     );

@@ -15,17 +15,17 @@ const scheduleItems: ScheduleItem[] = [
     {
         icon: studyProgramIcon,
         name: 'Jadwal Program Studi',
-        route: '/JadwalProdiPage',
+        route: 'schedule/StudyProgram',
     },
     {
         icon: lecturerIcon,
         name: 'Jadwal Dosen',
-        route: '/JadwalDosenPage',
+        route: 'schedule/Lecturer',
     },
     {
         icon: classIcon,
         name: 'Jadwal Ruang',
-        route: '/JadwalRuangPage',
+        route: 'schedule/Room',
     },
 ];
 
