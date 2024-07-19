@@ -1,10 +1,10 @@
 import React from 'react';
-import ScheduleMenuList from '@/components/schedulemenulist';
+import AuthPage from '@/pages/auth';
 
 export default function Home() {
   return (
     <div className='flex items-center justify-center min-h-screen'>
-      <ScheduleMenuList />
+      <AuthPage />
     </div>
   )
 }
