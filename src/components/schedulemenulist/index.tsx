@@ -31,7 +31,7 @@ const scheduleItems: ScheduleItem[] = [
 
 const ScheduleMenuList: React.FC = () => {
     return (
-        <div>
+        <div className='flex justify-between flex-wrap container items-center'>
             {scheduleItems.map((item, index) => (
                 <ScheduleIcon
                     key={index}
