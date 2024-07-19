@@ -1,16 +1,30 @@
 'use client';
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { signIn } from 'next-auth/react';
 
 export default function AuthForm() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Username:', username);
-    console.log('Password:', password);
+
+    const result = await signIn('credentials', {
+      redirect: false,
+      username,
+      password,
+    });
+
+    if (result?.error) {
+      // Handle error (e.g., show an error message to the user)
+      console.error(result.error);
+    } else {
+      // Redirect user or handle successful login
+      // For example, you can redirect to a dashboard page
+      window.location.href = '/schedule'; // Adjust the path as needed
+    }
   };
+
   return (
     <div className="w-full max-w-md bg-white p-8 rounded shadow">
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
