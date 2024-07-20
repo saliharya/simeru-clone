@@ -467,11 +467,13 @@ const fakultasData: Fakultas[] = [
                         kode: '211880200',
                         mataKuliah: 'Ilmu Dakwah',
                         kelas: 'G',
-                        sks: 0,
+                        sks: '0',
                         jam: '1,2',
                         semester: 'VIII',
                         dosen: 'Drs., Indal Abror, M.Ag.',
-                        ruang: 'Daring ( T. Informatika )'
+                        ruang: 'Daring ( T. Informatika )',
+                        fakultas: 'Fakultas Teknologi Industri',
+                        prodi: 'Teknik Informatika'
                     },
                     {
                         hari: 'senin',
