@@ -6,12 +6,12 @@ html, body {
     height: 100%;
     margin: 0;
   }
-  
-  body {
+
+    body {
     display: flex;
     flex-direction: column;
   }
   
   footer {
-    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    margin-top: auto;
   }

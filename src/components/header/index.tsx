@@ -5,7 +5,7 @@ import universityLogo from '../../../public/universityLogo.png';
 
 export default function Header() {
   return (
-    <header className="bg-blue-900 text-white p-4 h-28 flex items-center fixed top-0 w-full">
+    <header className="bg-blue-900 text-white p-4 h-28 flex items-center fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="left-0 flex">
           <Image

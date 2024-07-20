@@ -5,13 +5,11 @@ import '../app/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <div className="flex flex-col min-h-screen">
+        <main className="mt-28 mb-28" style={{ zIndex: 10 }}> {/* Tambah margin dan z-index */}
             <Header />
-            <main className="flex-1">
-                <Component {...pageProps} />
-            </main>
+            <Component {...pageProps} />
             <Footer />
-        </div>
+        </main>
     );
 }
 
