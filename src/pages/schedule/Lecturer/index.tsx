@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function JadwalRuangPage() {
+export default function JadwalDosenPage() {
     return (
         <div>
 
