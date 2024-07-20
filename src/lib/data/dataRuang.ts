@@ -335,7 +335,6 @@ export const dataRuang: Kampus[] = [
                     dosen: "Guntur Maulana Zamroni, B.Sc., M.Kom.",
                 }]
             }
-            // Add more rooms as needed
         ]
     },
     {

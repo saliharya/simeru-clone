@@ -8,7 +8,7 @@ import universityLogo from '../../../public/universityLogo.png';
 
 export default function Header() {
   const handleLogout = () => {
-    signOut({ callbackUrl: '/' }); // Redirect to home or any other page after sign out
+    signOut({ callbackUrl: '/' });
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Header() {
             <li>
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 text-white bg-red-600 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transform hover:scale-105"
+                className="px-4 py-2 text-white bg-transparent rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transform hover:scale-105"
               >
                 Logout
               </button>
