@@ -16,8 +16,8 @@ const ScheduleIcon: React.FC<ScheduleIconProps> = ({ icon, name, route }) => {
                     <Image
                         src={icon}
                         alt={name}
-                        layout="fill"
-                        objectFit="contain"
+                        fill
+                        style={{ objectFit: 'contain' }}
                         className="transition-transform transform hover:scale-110"
                     />
                 </div>
