@@ -1,5 +1,6 @@
+// ScheduleMenuList.tsx
 import React from 'react';
-import ScheduleIcon from '@/components/scheduleicon';
+import ScheduleIcon from '../scheduleicon';
 import studyProgramIcon from '../../../public/study_program_icon.png';
 import lecturerIcon from '../../../public/lecturer_icon.png';
 import classIcon from '../../../public/class_icon.png';
@@ -31,7 +32,7 @@ const scheduleItems: ScheduleItem[] = [
 
 const ScheduleMenuList: React.FC = () => {
     return (
-        <div className='flex justify-between flex-wrap container items-center'>
+        <div className='container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
             {scheduleItems.map((item, index) => (
                 <ScheduleIcon
                     key={index}
