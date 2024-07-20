@@ -4,7 +4,7 @@ import universityLogo from '../../../public/universityLogo.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 fixed bottom-0 w-full">
+    <footer className="bg-gray-800 text-white p-4 w-full">
       <div className="container mx-auto flex items-center justify-between">
         <div className="items-center hidden xl:block lg:block">
           <Image
@@ -23,7 +23,6 @@ export default function Footer() {
           <p className="text-sm">Telp. 0274 563 515, 379 418; Fax. 0274 564 604</p>
           <p className="text-sm">Email: <a href="mailto:biskom@uad.ac.id" className="text-blue-400 hover:underline">biskom@uad.ac.id</a></p>
         </div>
-
 
         <div className="hidden xl:block lg:block text-right flex-shrink-0">
           <p className="font-bold">MORAL AND INTELLECTUAL INTEGRITY</p>

@@ -5,11 +5,13 @@ import '../app/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <main className="min-h-screen mt-28 mb-28" style={{ zIndex: 10 }}>
+        <div className="flex flex-col min-h-screen">
             <Header />
-            <Component {...pageProps} />
+            <main className="flex-1 mt-28 mb-16"> {/* Flex-grow to take remaining space */}
+                <Component {...pageProps} />
+            </main>
             <Footer />
-        </main>
+        </div>
     );
 }
 
