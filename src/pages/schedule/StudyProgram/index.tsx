@@ -5,12 +5,12 @@ export default function JadwalProdiPage() {
     const [selectedFakultas, setSelectedFakultas] = useState('');
     const [selectedProdi, setSelectedProdi] = useState('');
 
-    const handleFakultasChange = (event) => {
+    const handleFakultasChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedFakultas(event.target.value);
         setSelectedProdi('');
     };
 
-    const handleProdiChange = (event) => {
+    const handleProdiChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedProdi(event.target.value);
     };
 
