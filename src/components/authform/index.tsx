@@ -1,8 +1,10 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { signIn } from 'next-auth/react';
 
 export default function AuthForm() {
+  const router = useRouter();
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
@@ -24,7 +26,7 @@ export default function AuthForm() {
     if (result?.error) {
       setError('Invalid Credentials');
     } else {
-      window.location.href = '/schedule';
+      router.push('/schedule');
     }
   };
 
