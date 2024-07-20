@@ -14,12 +14,12 @@ export default function JadwalProdiPage() {
         setSelectedProdi(event.target.value);
     };
 
-    const filteredJadwal = fakultasData.flatMap((fakultas) =>
+    const filteredjadwalProdi = fakultasData.flatMap((fakultas) =>
         fakultas.prodi.flatMap((prodi) =>
-            prodi.jadwal.filter(
-                (jadwal) =>
-                    (!selectedFakultas || jadwal.fakultas === selectedFakultas) &&
-                    (!selectedProdi || jadwal.prodi === selectedProdi)
+            prodi.jadwalProdi.filter(
+                (jadwalProdi) =>
+                    (!selectedFakultas || jadwalProdi.fakultas === selectedFakultas) &&
+                    (!selectedProdi || jadwalProdi.prodi === selectedProdi)
             )
         )
     );
@@ -70,7 +70,7 @@ export default function JadwalProdiPage() {
                 </div>
             )}
 
-            {selectedFakultas && selectedProdi && filteredJadwal.length > 0 && (
+            {selectedFakultas && selectedProdi && filteredjadwalProdi.length > 0 && (
                 <div className="mt-4">
                     <div className="overflow-x-auto">
                         <table className="table-auto w-full border border-gray-300">
@@ -90,34 +90,34 @@ export default function JadwalProdiPage() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {filteredJadwal.map((jadwal, index) => (
+                                {filteredjadwalProdi.map((jadwalProdi, index) => (
                                     <tr key={index}>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.hari}
+                                            {jadwalProdi.hari}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.kode}
+                                            {jadwalProdi.kode}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.mataKuliah}
+                                            {jadwalProdi.mataKuliah}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.kelas}
+                                            {jadwalProdi.kelas}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.sks}
+                                            {jadwalProdi.sks}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.jam}
+                                            {jadwalProdi.jam}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.semester}
+                                            {jadwalProdi.semester}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.dosen}
+                                            {jadwalProdi.dosen}
                                         </td>
                                         <td className="px-4 py-2 border border-gray-300">
-                                            {jadwal.ruang}
+                                            {jadwalProdi.ruang}
                                         </td>
                                     </tr>
                                 ))}

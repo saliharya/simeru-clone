@@ -5,10 +5,10 @@ interface Fakultas {
 
 interface Prodi {
     nama: string;
-    jadwal: Jadwal[];
+    jadwalProdi: JadwalProdi[];
 }
 
-interface Jadwal {
+interface JadwalProdi {
     hari: string;
     kode: string;
     mataKuliah: string;
@@ -28,7 +28,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Pendidikan Agama Islam',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Senin',
                         kode: 'FAI101',
@@ -64,7 +64,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Manajemen',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Selasa',
                         kode: 'FEK101',
@@ -87,7 +87,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Farmasi Klinis',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Kamis',
                         kode: 'FFK101',
@@ -110,7 +110,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Ilmu Hukum',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Jumat',
                         kode: 'FH101',
@@ -133,7 +133,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Pendidikan Dokter',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Senin',
                         kode: 'FKD101',
@@ -156,7 +156,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Pendidikan Matematika',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Selasa',
                         kode: 'FKIP101',
@@ -179,7 +179,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Ilmu Kesehatan Masyarakat',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Rabu',
                         kode: 'FKM101',
@@ -202,7 +202,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Psikologi Klinis',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Kamis',
                         kode: 'FPS101',
@@ -225,7 +225,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Bioteknologi',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Senin',
                         kode: 'FST101',
@@ -248,7 +248,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Sastra Inggris',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Rabu',
                         kode: 'FSI101',
@@ -271,7 +271,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Teknik Informatika',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Senin',
                         kode: '211860431',
@@ -764,7 +764,7 @@ const fakultasData: Fakultas[] = [
             },
             {
                 nama: 'Teknik Kimia',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Rabu',
                         kode: 'FTK101',
@@ -782,7 +782,7 @@ const fakultasData: Fakultas[] = [
             },
             {
                 nama: 'Teknik Elektro',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Kamis',
                         kode: 'FTE101',
@@ -800,7 +800,7 @@ const fakultasData: Fakultas[] = [
             },
             {
                 nama: 'Teknik Industri',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Jumat',
                         kode: 'FTI201',
@@ -818,7 +818,7 @@ const fakultasData: Fakultas[] = [
             },
             {
                 nama: 'Teknik Informatika Prosus',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Selasa',
                         kode: 'FTIP101',
@@ -836,7 +836,7 @@ const fakultasData: Fakultas[] = [
             },
             {
                 nama: 'Teknologi Pangan',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Kamis',
                         kode: 'FTP101',
@@ -859,7 +859,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Prodi Merdeka',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Rabu',
                         kode: 'KM101',
@@ -882,7 +882,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Magister Manajemen',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Senin',
                         kode: 'PAS101',
@@ -905,7 +905,7 @@ const fakultasData: Fakultas[] = [
         prodi: [
             {
                 nama: 'Program Sakti',
-                jadwal: [
+                jadwalProdi: [
                     {
                         hari: 'Selasa',
                         kode: 'PS101',
