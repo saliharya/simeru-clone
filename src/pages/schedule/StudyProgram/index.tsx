@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import fakultasData from '../../../lib/data/data';
+import fakultasData from '../../../lib/data/dataProdi';
 
 export default function JadwalProdiPage() {
     const [selectedFakultas, setSelectedFakultas] = useState('');
