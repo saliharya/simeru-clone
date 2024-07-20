@@ -5,7 +5,7 @@ import '../app/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <main className="mt-28 mb-28" style={{ zIndex: 10 }}> {/* Tambah margin dan z-index */}
+        <main className="min-h-screen mt-28 mb-28" style={{ zIndex: 10 }}>
             <Header />
             <Component {...pageProps} />
             <Footer />
