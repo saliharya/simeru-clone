@@ -13,7 +13,7 @@ export default function Header() {
             alt="University Logo"
             width={200}
             height={200}
-            className="object-contain hidden lg:block"
+            className="object-contain"
           />
         </Link>
       </div>
